@@ -5,10 +5,7 @@
     <classes>
       <class name="com.learnframework.testcases.LoginCRM">
         <methods>
-          <include name="screenonFailure"/>
-          <include name="teardown"/>
           <include name="setUpSuit"/>
-          <include name="setup"/>
           <include name="validLlogin"/>
         </methods>
       </class> <!-- com.learnframework.testcases.LoginCRM -->

@@ -1,54 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[Brrowsers setup completed]]>
-    </line>
-    <line>
-      <![CDATA[Login screen is open]]>
-    </line>
-    <line>
-      <![CDATA[Checking pagetitle]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52964" started-at="2019-06-28T06:54:07Z" finished-at="2019-06-28T06:55:00Z">
+  <suite name="Default suite" duration-ms="1112" started-at="2019-06-28T10:30:09Z" finished-at="2019-06-28T10:30:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52964" started-at="2019-06-28T06:54:07Z" finished-at="2019-06-28T06:55:00Z">
+    <test name="Default test" duration-ms="1112" started-at="2019-06-28T10:30:09Z" finished-at="2019-06-28T10:30:10Z">
       <class name="com.learnframework.testcases.LoginCRM">
-        <test-method status="PASS" signature="setUpSuit()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="setUpSuit" is-config="true" duration-ms="1653" started-at="2019-06-28T12:24:05Z" finished-at="2019-06-28T12:24:07Z">
+        <test-method status="PASS" signature="setUpSuit()[pri:0, instance:com.learnframework.testcases.LoginCRM@482f8f11]" name="setUpSuit" is-config="true" duration-ms="4863" started-at="2019-06-28T16:00:04Z" finished-at="2019-06-28T16:00:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuit -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="setup" is-config="true" duration-ms="38373" started-at="2019-06-28T12:24:07Z" finished-at="2019-06-28T12:24:45Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Brrowsers setup completed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="validLlogin()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="validLlogin" duration-ms="8668" started-at="2019-06-28T12:24:46Z" finished-at="2019-06-28T12:24:54Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.learnframework.testcases.LoginCRM@482f8f11]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-28T16:00:09Z" finished-at="2019-06-28T16:00:09Z">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Failed expected [Gogle] but found [CRM]]]>
+              <![CDATA[
+Parameter 'systembrowser' is required by @Configuration on method setup but has not been marked @Optional or defined
+in C:\Users\amit\AppData\Local\Temp\testng-eclipse--1864227460\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed expected [Gogle] but found [CRM]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at com.learnframework.testcases.LoginCRM.validLlogin(LoginCRM.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'systembrowser' is required by @Configuration on method setup but has not been marked @Optional or defined
+in C:\Users\amit\AppData\Local\Temp\testng-eclipse--1864227460\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -65,28 +45,19 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[Login screen is open]]>
-            </line>
-            <line>
-              <![CDATA[Checking pagetitle]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="validLlogin()[pri:0, instance:com.learnframework.testcases.LoginCRM@482f8f11]" name="validLlogin" duration-ms="16" started-at="2019-06-28T16:00:10Z" finished-at="2019-06-28T16:00:10Z">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- validLlogin -->
-        <test-method status="PASS" signature="screenonFailure(org.testng.ITestResult)[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="screenonFailure" is-config="true" duration-ms="3657" started-at="2019-06-28T12:24:54Z" finished-at="2019-06-28T12:24:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validLlogin status=FAILURE method=LoginCRM.validLlogin()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402] output=Login screen is open]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="screenonFailure(org.testng.ITestResult)[pri:0, instance:com.learnframework.testcases.LoginCRM@482f8f11]" name="screenonFailure" is-config="true" duration-ms="0" started-at="2019-06-28T16:00:10Z" finished-at="2019-06-28T16:00:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenonFailure -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="teardown" is-config="true" duration-ms="1608" started-at="2019-06-28T12:24:58Z" finished-at="2019-06-28T12:25:00Z">
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.learnframework.testcases.LoginCRM@482f8f11]" name="teardown" is-config="true" duration-ms="0" started-at="2019-06-28T16:00:10Z" finished-at="2019-06-28T16:00:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
