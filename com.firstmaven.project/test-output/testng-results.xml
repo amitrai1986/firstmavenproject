@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Brrowsers setup completed]]>
+    </line>
+    <line>
+      <![CDATA[Login screen is open]]>
+    </line>
+    <line>
+      <![CDATA[Checking pagetitle]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52964" started-at="2019-06-28T06:54:07Z" finished-at="2019-06-28T06:55:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52964" started-at="2019-06-28T06:54:07Z" finished-at="2019-06-28T06:55:00Z">
+      <class name="com.learnframework.testcases.LoginCRM">
+        <test-method status="PASS" signature="setUpSuit()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="setUpSuit" is-config="true" duration-ms="1653" started-at="2019-06-28T12:24:05Z" finished-at="2019-06-28T12:24:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuit -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="setup" is-config="true" duration-ms="38373" started-at="2019-06-28T12:24:07Z" finished-at="2019-06-28T12:24:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Brrowsers setup completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="validLlogin()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="validLlogin" duration-ms="8668" started-at="2019-06-28T12:24:46Z" finished-at="2019-06-28T12:24:54Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Failed expected [Gogle] but found [CRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Failed expected [Gogle] but found [CRM]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.learnframework.testcases.LoginCRM.validLlogin(LoginCRM.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Login screen is open]]>
+            </line>
+            <line>
+              <![CDATA[Checking pagetitle]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLlogin -->
+        <test-method status="PASS" signature="screenonFailure(org.testng.ITestResult)[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="screenonFailure" is-config="true" duration-ms="3657" started-at="2019-06-28T12:24:54Z" finished-at="2019-06-28T12:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLlogin status=FAILURE method=LoginCRM.validLlogin()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402] output=Login screen is open]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenonFailure -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.learnframework.testcases.LoginCRM@675d3402]" name="teardown" is-config="true" duration-ms="1608" started-at="2019-06-28T12:24:58Z" finished-at="2019-06-28T12:25:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.learnframework.testcases.LoginCRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
